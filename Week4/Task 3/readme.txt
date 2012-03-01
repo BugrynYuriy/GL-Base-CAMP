@@ -18,6 +18,6 @@
 З використанням модуля виконати інвертування вхідної послідовності символів.
 
 
-Документація по DLL - Task 3\DLL\release\documentation_for_stack_dll
+Документація по DLL - Task 3\DLL\release\readme
 
 Прошу залишати відгуки тут - http://nightingale-2011.appspot.com/
