@@ -18,6 +18,6 @@
 З використанням модуля виконати інвертування вхідної послідовності символів.
 
 
-Документація по DLL - Task 3\DLL\release\readme
+Документація по DLL - https://github.com/BugrynYuriy/GL-Base-CAMP/blob/master/Week4/Task%203/DLL/release/readme.html
 
 Прошу залишати відгуки тут - http://nightingale-2011.appspot.com/
