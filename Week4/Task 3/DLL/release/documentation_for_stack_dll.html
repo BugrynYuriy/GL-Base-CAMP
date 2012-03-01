@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="uk" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Documentation for STACK_DLL</title>
+<style type="text/css">
+.auto-style1 {
+	text-align: center;
+	font-size: large;
+	color: #050CF8;
+}
+.auto-style2 {
+	color: #1117F3;
+}
+.auto-style3 {
+	color: #F31F11;
+}
+.auto-style4 {
+	color: #1123F3;
+}
+.auto-style5 {
+	color: #F32B11;
+}
+</style>
+</head>
+
+<body>
+
+<p class="auto-style1">Documentation for STACK_DLL</p>
+<p class="auto-style1">&nbsp;</p>
+<table bgcolor="#FFFFFF" border="2px" style="width: 100%">
+	<tr>
+		<td style="width: 381px"><span class="auto-style2">struct</span> STACK<br />
+		{<br />
+&nbsp;&nbsp; <span class="auto-style2">&nbsp;char</span> * stack;<br />
+&nbsp;&nbsp; <span class="auto-style2">&nbsp;int</span> size; <br />
+&nbsp;&nbsp; <span class="auto-style2">&nbsp;int</span> top; <br />
+		};</td>
+		<td>Parameters :<br />
+		<br />
+		<span class="auto-style2">char </span>* stack - pointer to array of 
+		elements<br />
+		<span class="auto-style2">int</span> size - size of limited stack<br />
+		<span class="auto-style2">int</span> top - top of the stack<br />
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 381px">Function :<br />
+		<br />
+		<span class="auto-style4">STACK *</span><span class="auto-style3"> 
+		createStack(</span><span class="auto-style4">unsigned int</span><span class="auto-style3"> 
+		size)</span> - return pointer to struct type STACK , return NULL if 
+		function can't allocate memory for stack or pointer to empty STACK if 
+		function can't allocate memory for elements of STACK</td>
+		<td>Parameters :<br />
+		<br />
+		<span class="auto-style4">unsigned int</span> size - size of STACK</td>
+	</tr>
+	<tr>
+		<td style="width: 381px">Function :<br />
+		<br />
+		<span class="auto-style4">void</span> <span class="auto-style5">
+		deleteStack(</span><span class="auto-style2">STACK ** </span>
+		<span class="auto-style5">stack)</span> - call destructor of struct type 
+		STACK</td>
+		<td>Parameters :<br />
+		<br />
+		<span class="auto-style2">STACK **</span> stack - pointer to struct type 
+		STACK<br />
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 381px">Function :<br />
+		<br />
+		<span class="auto-style2">void</span><span class="auto-style5"> push(</span><span class="auto-style2">STACK 
+		**</span><span class="auto-style5"> stack,</span><span class="auto-style2">char</span><span class="auto-style5"> 
+		value) </span>- add element to STACK , return exception<br />
+		if STACK is empty</td>
+		<td>Parameters :<br />
+		<br />
+		<span class="auto-style2">STACK **</span> stack - pointer to struct type 
+		STACK<br />
+		char value - value which will be added to STACK</td>
+	</tr>
+	<tr>
+		<td style="width: 381px">Function :<br />
+		<span class="auto-style2">char</span><span class="auto-style5"> pop(</span><span class="auto-style2">STACK 
+		**</span><span class="auto-style5"> stack)</span> - return top of STACK 
+		and delete it , return exception<br />
+		if STACK is empty</td>
+		<td>Parameters :<br />
+		<br />
+		<span class="auto-style2">STACK **</span> stack - pointer to struct type 
+		STACK</td>
+	</tr>
+	<tr>
+		<td style="width: 381px">Function :<br />
+		<br />
+		<span class="auto-style2">void</span><span class="auto-style5"> clean(</span><span class="auto-style2">STACK 
+		** </span><span class="auto-style5">stack)</span> - clean the STACK</td>
+		<td>Parameters :<br />
+		<br />
+		<span class="auto-style2">STACK **</span> stack - pointer to struct type 
+		STACK</td>
+	</tr>
+	<tr>
+		<td style="width: 381px">Function :<br />
+		<br />
+		<span class="auto-style2">char</span><span class="auto-style5"> getTop</span><span class="auto-style2">(STACK 
+		**</span><span class="auto-style5"> stack)</span>;&nbsp; return top of 
+		STACK<br />
+		</td>
+		<td>Parameters :<br />
+		<br />
+		<span class="auto-style2">STACK **</span> stack - pointer to struct type 
+		STACK</td>
+	</tr>
+	<tr>
+		<td style="width: 381px">Function :<br />
+		<br />
+		<span class="auto-style2">int</span><span class="auto-style5"> isEmpty(</span><span class="auto-style2">STACK 
+		**</span><span class="auto-style5"> stack) </span>return 1 if STACK is 
+		empty else return 0</td>
+		<td>Parameters :<br />
+		<br />
+		<span class="auto-style2">STACK ** </span>stack - pointer to struct type 
+		STACK</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

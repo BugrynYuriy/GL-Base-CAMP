@@ -1,0 +1,77 @@
+// STACK_DLL
+
+struct STACK
+{
+	char * stack;
+	int size; 
+	int top; 
+};
+
+Parameters :
+
+char * stack - pointer to array of elements
+int size     - size of limited stack
+int top      - top of the stack
+
+
+Function :
+
+STACK * createStack(unsigned int size) - return pointer to struct type STACK ,
+return NULL if function can't allocate memory for stack or pointer to empty 
+STACK if function can't allocate memory for elements of STACK
+
+Parameters :
+
+unsigned int size - size of STACK
+
+Function :
+
+void deleteStack(STACK ** stack) - call destructor of struct type STACK
+
+Parameters :
+
+STACK ** stack - pointer to struct type STACK
+
+Function :
+
+void push(STACK ** stack,char value) - add element to STACK , return exception
+if STACK is empty
+
+Parameters :
+
+STACK ** stack - pointer to struct type STACK
+char value - value which will be added to STACK
+
+
+Function :
+char pop(STACK ** stack) - return top of STACK and delete it , return exception
+if STACK is empty
+
+Parameters :
+
+STACK ** stack - pointer to struct type STACK
+
+Function :
+
+void clean(STACK ** stack) - clean the STACK
+
+Parameters :
+
+STACK ** stack - pointer to struct type STACK
+
+Function :
+
+char getTop(STACK ** stack) return top of STACK
+
+Parameters :
+
+STACK ** stack - pointer to struct type STACK
+
+Function :
+
+int isEmpty(STACK ** stack) return 1 if STACK is empty else return 0
+
+Parameters :
+
+STACK ** stack - pointer to struct type STACK
+
