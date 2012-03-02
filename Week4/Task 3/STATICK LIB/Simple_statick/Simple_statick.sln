@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simple_statick", "Simple_statick\Simple_statick.vcxproj", "{D807A5C4-8F83-4B70-9D50-78979ABE9D9C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Use_simple_libary", "Use_simple_libary\Use_simple_libary.vcxproj", "{8AD95815-FF5E-4EAD-A7F8-FF27568CE5D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D807A5C4-8F83-4B70-9D50-78979ABE9D9C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D807A5C4-8F83-4B70-9D50-78979ABE9D9C}.Debug|Win32.Build.0 = Debug|Win32
+		{D807A5C4-8F83-4B70-9D50-78979ABE9D9C}.Release|Win32.ActiveCfg = Release|Win32
+		{D807A5C4-8F83-4B70-9D50-78979ABE9D9C}.Release|Win32.Build.0 = Release|Win32
+		{8AD95815-FF5E-4EAD-A7F8-FF27568CE5D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AD95815-FF5E-4EAD-A7F8-FF27568CE5D6}.Debug|Win32.Build.0 = Debug|Win32
+		{8AD95815-FF5E-4EAD-A7F8-FF27568CE5D6}.Release|Win32.ActiveCfg = Release|Win32
+		{8AD95815-FF5E-4EAD-A7F8-FF27568CE5D6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
