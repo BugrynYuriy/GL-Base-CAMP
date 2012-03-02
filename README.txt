@@ -1,6 +1,4 @@
-They are my simple programs ? 
-
-First commit - add task 1
-Second commit - add task 2
-
-olololo
+1 - бітові операції
+2 - робота зі структурами
+3 - реалізація динамічних структур даних
+4 - класи , робота з динамічними та статичними бібліотеками
