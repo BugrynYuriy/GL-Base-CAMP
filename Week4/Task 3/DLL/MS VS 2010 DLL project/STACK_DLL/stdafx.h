@@ -50,7 +50,7 @@ extern "C"
 	DllExport void clean(STACK ** stack); // clean the STACK
 	DllExport char getTop(STACK ** stack); // return top of STACK
 	DllExport char pop(STACK ** stack); // return top of STACK and delete it 
-	DllExport int isEmpty(STACK ** stack); // return 1 if STACK is empty else return 0
+	DllExport int  isEmpty(STACK ** stack); // return 1 if STACK is empty else return 0
 
 }
 
