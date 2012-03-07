@@ -97,35 +97,42 @@ char getTop(STACK ** stack)
 char pop( STACK ** stack )
 {
 
-	if( *stack != NULL ){
+	if( *stack != NULL )
+	{
 		if( ( *stack )->stack == NULL || isEmpty( stack ) )
+		{
 			throw "\nstack is empty";
+		}
 		
 		else
-			{
+		{
 				
-				(*stack)-> top--;
+			(*stack)-> top--;
 
-				if((*stack)-> top<0)
-					(*stack)-> top = 0;
-
-				return (*stack)->stack[(*stack)->top];
+			if( ( *stack )->top < 0 )
+			{
+				( *stack )->top = 0;
 			}
+
+			return ( *stack )->stack[ ( *stack )->top ];
+		}
 	}
 }
 
-int isEmpty(STACK ** stack)
+int isEmpty( STACK ** stack )
 {
-	if( (*stack) -> top == 0)
-		
+	if( ( *stack ) -> top == 0)
+	{
 		return 1;
+	}
 	
 	else
-		
+	{
 		return 0;
+	}
 }
 
-void clean(STACK ** stack)
+void clean( STACK ** stack )
 {
 	(*stack)->top = 0;
 }
