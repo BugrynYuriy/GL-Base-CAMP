@@ -14,19 +14,20 @@ STACK * createStack(unsigned int size)
 		stack = new STACK();
 	}
 
-	catch(std::bad_alloc &e)
+	catch( std::bad_alloc &e )
 		{
 			std::cout<<"Can't allocate memory for stack";
 			return NULL;
 		}
 	
-	if(size!=0)
+	if( size != 0 )
 	{
 		try
 		{
 			stack->stack = new char [size];
 		}
-		catch(std::bad_alloc &e)
+		
+		catch( std::bad_alloc &e )
 		{
 			std::cout<<"Can't allocate memory for elemnts of stack";
 			return stack;
@@ -40,7 +41,7 @@ STACK * createStack(unsigned int size)
 void deleteStack(STACK ** stack)
 {	
 	
-	if(*stack!=NULL)
+	if( *stack != NULL )
 	{
 	
 		delete *stack;
@@ -50,20 +51,24 @@ void deleteStack(STACK ** stack)
 	
 }
 
-void push(STACK ** stack,char value)
+void push( STACK ** stack , char value )
 {
 	
 	
-	if(*stack!=NULL)
-	{
-		if((*stack)->stack==NULL || (*stack)->top+1>(*stack)->size)
-				return;
+	if( *stack != NULL )
+	{ 
+		if( ( *stack )->stack == NULL || ( *stack )->top+1>( *stack )->size )
+		{
+			return;
+		}	
+		
 		else
-			{
-				(*stack)->stack[(*stack)->top] = value;
-				(*stack)-> top++;
-				return ;
-			}
+		{
+			( *stack )->stack[ ( *stack )->top ] = value;
+			( *stack )-> top++;
+				
+			return ;
+		}
 	}
 
 }
@@ -72,29 +77,29 @@ char getTop(STACK ** stack)
 {
 	int top;
 	
-	if((*stack)->size==0 || isEmpty(stack))
+	if( ( *stack )->size == 0 || isEmpty( stack ) )
 	{
-		throw "Stak is empty";
+		throw "\nStak is empty";
 	}
 
 	else
 	{
-		top = (*stack)->top-1;
+		top = ( *stack )->top-1;
 		
 		if( top < 0 )
 			top = 0;
 		
-		return (*stack)->stack[top];
+		return ( *stack )->stack[ top ];
 
 	}
 }
 
-char pop(STACK ** stack)
+char pop( STACK ** stack )
 {
 
-	if(*stack!=NULL){
-		if((*stack)->stack==NULL || isEmpty(stack))
-			throw "stack is empty";
+	if( *stack != NULL ){
+		if( ( *stack )->stack == NULL || isEmpty( stack ) )
+			throw "\nstack is empty";
 		
 		else
 			{
